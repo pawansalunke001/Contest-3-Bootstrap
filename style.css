@@ -1,0 +1,82 @@
+/* Whole Body mergin set  */
+body{
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+/* Custom CSS section with flex div */
+.custom_css{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.custom_css_child{
+    flex-basis: 33.33%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.custom_css_child img{
+    width: 100%;
+}
+/* End of Custom CSS section with flex div */
+
+
+
+
+/* Photo gallery using CSS Grid */
+#photo_gallery{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* End of Photo gallery using CSS Grid */
+
+
+
+/* Bootstrap card section */
+/* Box shadow to cards -  slight drop shadow */
+.card{
+    box-shadow: 0px 2px 20px -1px #00000040;
+}
+
+/* End of Bootstrap card section */
+
+
+
+/* Footer section CSS */
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+.no_bullet{
+    list-style-type: none; 
+    padding-left: 0px;
+ }
+ /* End of Footer section CSS */
+
+
+
+ /* Media query CSS for responsive UI */ 
+ /*  */
+@media screen and (max-width:900px) and (min-width:500px) {
+    .custom_css_child{
+        flex-basis: 40%;
+        margin: auto;
+    }
+}
+
+/* media query for small screen */
+@media screen and (max-width:750px) {
+    #ham_menu{
+        margin-right: 0px;
+    }
+    .navbar .container-fluid{
+        justify-content: space-between !important;
+    }
+    .custom_css_child{
+        flex-basis: 100%;
+    }
+}
+/* End of Media query */
+

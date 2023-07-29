@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add bootstrap CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header>
+            <!-- Bootstrap-based header with a responsive navigation bar - with heading and links -->
+            <!-- Bootstrap class used to collapse into a hamburger menu on smaller screens -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 d-flex justify-content-evenly">
+                <div class="container-fluid">
+                    <!-- Grid classes used for different screen sizes -->
+                    <div class="col-xs-11 col-sm-11 col-md-11 offset-lg-2 col-lg-1">
+                        <a class="navbar-brand" href="#">Complex UI</a> <!--heading -->
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-9">
+                        <!-- Bootstrap class used to collapse into a hamburger menu on smaller screens -->
+                        <!-- Hamburger menu for smaller screens -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
+                            <div>
+                                <!-- links  -->
+                                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Section 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Section 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Section 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!-- search bar -->
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <button class="btn btn-outline-success" type="submit">
+                                        Search
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="offset-lg-2" id="ham_menu"></div> -->
+                </div>
+            </nav>
+        </header>
+
+        <!-- Bootstrap carousel with indicators and controls, and transition smoothly between slides-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Showcase multiple images with captions and Call to Action button -->
+                    <img src="https://images.unsplash.com/photo-1690147022157-5fdfaa28cd6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="slide1" height="100%">
+                    <div class="carousel-caption">
+                        <h5>First slide label</h5>
+                        <p>First slide description.</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Showcase multiple images with captions and Call to Action button -->
+                    <img src="https://images.unsplash.com/photo-1690342823212-68a2b833f5ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="slide2" height="100%">
+                    <div class="carousel-caption">
+                        <h5>Second slide label</h5>
+                        <p>Second slide description.</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls to scroll -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="main my-4">
+
+            <!-- custom CSS section with a flex div -->
+            <!-- flex div with three divs inside of it -->
+            <div class="row custom_css d-flex justify-content-between my-4 ">
+                <!-- Each div should contain an image and a short description. -->
+                <div class="custom_css_child">
+                    <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="ban1" />
+                    <div class="text-center">
+                        <p>Short description</p>
+                    </div>
+                </div>
+                <!-- Each div should contain an image and a short description. -->
+                <div class="custom_css_child">
+                    <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="ban2" />
+                    <div class="text-center">
+                        <p>Short description</p>
+                    </div>
+                </div>
+                <!-- Each div should contain an image and a short description. -->
+                <div class="custom_css_child">
+                    <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="ban3" />
+                    <div class="text-center">
+                        <p>Short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- photo gallery using CSS Grid -->
+            <div id="photo_gallery container-fluid my-4">
+                <!-- 3 rows and 3 columns dislaying total of 9 images -->
+                <div class="row">
+                    <!-- images are responsive and maintained their aspect ratios -->
+                    <div class="col-4" style="align-items: center;">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" height="95%" />
+                    </div>
+
+                    <div class="col-2" style="align-items: center;">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" height="45.5%" />
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" height="45.5%" />
+                    </div>
+
+                    <div class="col-2" style="align-items: center;">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" height="45.5%" />
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" height="45.5%" />
+                    </div>
+
+                    <div class="col-4" style="align-items: center;">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" height="45.5%" />
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" height="45.5%" />
+                    </div>
+
+                    <div class="col-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" height="100%" />
+                    </div>
+
+                    <div class="col-8">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" height="100%" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap card section -->
+            <div class="card_section my-4">
+                <!-- cards should go from being shown in a row to a column as screen size becomes small - Used boostrap grid classes for different views for different screens -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- displaying three cards with an image, title, description, and a call-to-action button. -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1690441426989-0cf9f866a6f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Card description.</p>
+                                <!-- smooth hover effect using bootstrap btn classes -->
+                                <button type="button" class="btn btn-primary">Call to Action</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- displaying three cards with an image, title, description, and a call-to-action button. -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1690441426989-0cf9f866a6f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Card description.</p>
+                                <!-- smooth hover effect using bootstrap btn classes -->
+                                <button type="button" class="btn btn-primary">Call to Action</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- displaying three cards with an image, title, description, and a call-to-action button. -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1690441426989-0cf9f866a6f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Card description.</p>
+                                <!-- smooth hover effect using bootstrap btn classes -->
+                                <button type="button" class="btn btn-primary">Call to Action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <b>Useful Links</b>
+                    <!-- links -->
+                    <ul class="no_bullet">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <!-- links -->
+                    <b>More Links</b>
+                    <ul class="no_bullet">
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-12"><b> Contact Us </b></div>
+                        <div class="col-12"> Email: example@example.com</div>
+                        <div class="col-12"> Phone: +1 (555) 123-4567</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- copyright statement -->
+            <div class="col-12 mt-4">© 2023 Complex UI. All Rights Reserved.</div>
+            <!-- back-to-top button -->
+            <div class="float-end"><button type="button" class="btn btn-primary">Back to Top</button></div><br>
+        </footer>
+    </div>
+
+    <!-- Add bootstrap JS cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
